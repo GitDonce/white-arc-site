@@ -1,0 +1,41 @@
+:root {
+  color-scheme: dark;
+  --bg: #1b1528;
+  --panel: #282040;
+  --fg: #f7f4fd;
+  --muted: #b0a4cc;
+  --border: #3d3454;
+  --accent: #ab7dff;
+  --accent-soft: #d3baff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at top, #2c2245 0%, var(--bg) 60%) fixed, var(--bg);
+  color: var(--fg);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 1.5rem 16px 3rem; }
+nav { display: flex; align-items: center; gap: 1rem; max-width: 680px; margin: 0 auto; padding: 1rem 16px 0; flex-wrap: wrap; }
+nav .brand { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--fg); text-decoration: none; margin-right: auto; }
+nav .brand img { width: 32px; height: 32px; border-radius: 8px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover, nav a[aria-current] { color: var(--fg); }
+h1, h2, h3 { line-height: 1.25; color: #fff; }
+h1 { font-size: 1.9rem; margin: 1.5rem 0 0.5rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; }
+h3 { font-size: 1rem; margin: 1.5rem 0 0.25rem; }
+a { color: var(--accent-soft); }
+.muted { color: var(--muted); }
+.hero { text-align: center; padding: 2rem 0 1rem; }
+.hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 0 48px rgba(171, 125, 255, 0.35); }
+.hero h1 { font-size: 2.3rem; margin-top: 1rem; }
+.hero p { color: var(--muted); font-size: 1.1rem; margin: 0.25rem 0 1.5rem; }
+.cta { display: inline-block; background: var(--accent); color: var(--bg); font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none; }
+.soon { display: inline-block; border: 1px solid var(--border); color: var(--muted); padding: 0.6rem 1.2rem; border-radius: 12px; }
+.cards { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 2rem 0; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 1rem; }
+.card h3 { margin: 0 0 0.25rem; }
+.card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+footer { max-width: 680px; margin: 0 auto; padding: 1.5rem 16px 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+footer a { color: var(--muted); }
